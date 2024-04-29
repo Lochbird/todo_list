@@ -1,11 +1,10 @@
-import TodoWrapper from "./TodoWrapper/TodoWrapper";
+//? need to wrap import in curly braces because it is a named export
+import { TodoWrapper } from "./TodoWrapper/TodoWrapper";
 
-function App() {
+export function App() {
   return (
     <div className="App">
       <TodoWrapper />
     </div>
   );
 }
-
-export default App;
