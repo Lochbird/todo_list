@@ -19,7 +19,12 @@ export const TodoWrapper = () => {
   };
 
   const deleteTodos = (id) => {
+    //* using the filter method so that it'll return a new array with the removed todo
     setTodos(todos.filter((todo) => todo.id !== id));
+  };
+
+  const editTodos = (id) => {
+    setTodos(todos.map((todo) => todo.id === id));
   };
 
   return (
